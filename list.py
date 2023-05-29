@@ -81,7 +81,7 @@ def contains_nested(paren):
         return False
 
 def simplify(parens, updated):
-    print(f"Simplify: Parens: {parens}, Updated: {updated}")
+    #print(f"Simplify: Parens: {parens}, Updated: {updated}")
     if(len(parens) == 0):
         return updated
     expr = parens[0]
@@ -199,8 +199,10 @@ def get_digits(expr):
             nums.append(temp_num)
             temp_num = ""
     nums.append(temp_num)
-    for i in range(len(nums)):
-        nums[i] = int(nums[i])
+    pure_nums = []
+    for num in nums:
+        if num != "":
+            pure_nums.append(int(num))
     return nums
 
 def gen_nums():
