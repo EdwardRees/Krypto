@@ -229,12 +229,7 @@ if __name__ == "__main__":
     calculation = input("Enter your calculation: ")
 
     digits = get_digits(calculation)
-    """
-    if set(digits) != set(nums):
-        print("You used illegal values!")
-        print(f"You used {digits} but you could only use {nums}")
-        exit(-1)
-    """     
+    
     guess = parse(calculation)
  
     if float(guess) == float(date):
