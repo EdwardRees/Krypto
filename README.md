@@ -11,7 +11,7 @@ Python3
 In your terminal, run:
 
 ```bash
-  python3 list.py
+python3 list.py
 ```
 
 5 numbers will be generated and the number to calculate will also be given. Input the arithmetic statement and the program will calculate the output. If the results are correct, the program will say that the calculation was correct. Otherwise, it will print out the supposed value. Additionally, if invalid numbers are used - meaning numbers that weren't generated - the program will print out an error message and stop.

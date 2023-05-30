@@ -236,3 +236,8 @@ if __name__ == "__main__":
         print("You got it!")
     else:
         print(f"Good try. Your calculation was: {guess}")
+
+"""
+Crashes:
+- If the last value is in parentheses, it crashes due to "updated[-1] not in "+-/*""
+"""
